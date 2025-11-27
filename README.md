@@ -30,12 +30,12 @@ import matplotlib.pyplot as plt
 # Create the Text using cv2.putText
 image = np.zeros((500, 500, 3), dtype=np.uint8)
 font = cv2.FONT_HERSHEY_SIMPLEX
-cv2.putText(image, 'T.ROSHINI', (100, 250), font, 1, (255, 255, 255), 2, cv2.LINE_AA)
+cv2.putText(image, 'PAVITHRAN MJ', (100, 250), font, 1, (255, 255, 255), 2, cv2.LINE_AA)
 
 # Create the structuring element
 kernel = np.ones((3, 3), np.uint8)
 plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))  # Convert BGR to RGB for displaying
-plt.title("PAVITHRAN MJ")
+plt.title("Input image with text")
 plt.axis('off')
 
 
